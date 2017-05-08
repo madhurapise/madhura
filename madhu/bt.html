@@ -1,0 +1,51 @@
+<html>
+<head>
+<style>
+body {
+     padding:50px;
+}
+
+.btn {
+    display:inline-block;
+    overflow:hidden;
+    background-color:black;
+    color:white;
+    font:normal 12px Times,Serif;
+    text-decoration:none;
+    padding:0 0 0 30px;
+}
+
+.btn .left {
+    float:left;
+    line-height:30px;
+    padding-right:30px;
+}
+
+.btn .right {
+    float:right;
+    line-height:30px;
+    background-color:red;
+    text-align:center;
+    width:0;
+    overflow:hidden;
+    -webkit-transition:width 0.4s cubic-bezier(0,2,0,0);
+    -moz-transition:width 0.4s cubic-bezier(0,2,0,0);
+    -ms-transition:width 0.4s cubic-bezier(0,2,0,0);
+    -o-transition:width 0.4s cubic-bezier(0,2,0,0);
+    transition:width 0.4s cubic-bezier(0,2,0,0);
+}
+
+.btn:hover .right {width:100px;}
+
+
+</style>
+</head>
+
+
+<body>
+<a class="btn" href="#">
+    <div class="left">Shop</div>
+    <div class="right">Now</div>
+</a>
+</body>
+</html>
